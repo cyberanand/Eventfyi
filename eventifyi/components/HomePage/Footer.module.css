@@ -1,0 +1,55 @@
+/* components/Footer.module.css */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #2c3e50; /* Dark background */
+    color: white;
+  }
+  
+  .socials {
+    flex: 1;
+  }
+  
+  .socials h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .socials ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .socials li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .socials a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Align icons with text */
+  }
+  
+  .socials a:hover {
+    text-decoration: underline;
+  }
+  
+  .socials a svg {
+    margin-right: 0.5rem; /* Spacing between icon and text */
+  }
+  
+  .about {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .about h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    margin: 0;
+  }
+  

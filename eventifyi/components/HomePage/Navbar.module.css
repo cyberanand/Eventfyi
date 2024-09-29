@@ -1,0 +1,29 @@
+/* components/Navbar.module.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .navItems {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navItems li {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .navItems li:hover {
+    color: #ff4b2b; /* Example hover color */
+  }
+  

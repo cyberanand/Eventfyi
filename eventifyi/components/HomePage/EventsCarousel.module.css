@@ -1,0 +1,82 @@
+/* components/EventsCarousel.module.css */
+.carouselContainer {
+    margin: 2rem 0;
+    padding: 0; /* Remove padding to eliminate background */
+    text-align: center;
+    position: relative; /* Ensure the container is positioned for absolute elements */
+}
+
+.carouselTitle {
+    font-size: 32px;
+    margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.eventCard {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    padding: 0.5rem; /* Added padding for content */
+    border: none; /* Remove border */
+    margin: 0.5rem; /* Space between cards */
+    border-radius: 12px; /* Rounded corners for modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for floating effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+    display: inline-block; /* Allows for spacing between cards */
+    width: calc(33% - 2rem); /* Responsive width for three cards in a row */
+}
+
+.eventCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.eventImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem; /* Space below each image */
+}
+
+/* Arrow Styles */
+.arrow {
+    font-size: 25px; /* Adjusted arrow size to be smaller */
+    cursor: pointer;
+    color: black; /* Black arrow */
+    background-color: rgba(255, 255, 255, 0.7); /* More transparent white background */
+    padding: 8px; /* Adjusted padding */
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .eventCard {
+        width: calc(50% - 2rem); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .eventCard {
+        width: calc(100% - 2rem); /* One card per row on mobile */
+    }
+}
